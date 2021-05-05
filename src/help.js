@@ -11,17 +11,19 @@ const help = (prefix) => {
 ┏━━❉ *Comandos Disponibles* ❉━━━┓
 ┣⊱ *Comandos de Administrador y Usuario* 
 ┣⊱ ===============================
-┣⊱ ${prefix}info -> Admin
+┣⊱ ${prefix}info -> Admin creador
 ┣⊱ ${prefix}setprefix -> Cambia el codigo inicial del grupo
 ┣⊱ ${prefix}welcomusic -> Bienvenida para grupos de musica
 ┣⊱ ${prefix}admins -> Enlista de admins del grupo 
-┣⊱ ${prefix}linkgroup -> link del grupo
+┣⊱ ${prefix}linkgrupo -> link del grupo
 ┣⊱ ${prefix}promover -> Promueve a administrador (solo admins)
 ┣⊱ ${prefix}desmontar -> Degarda de admin a user (solo admins)
 ┣⊱ ${prefix}llamada -> En lista a todos con etiqueta 
 ┣⊱ ${prefix}gb -> Mensaje Global medio de difusion (solo admins)
 ┣⊱ ${prefix}add -> Añade numeros al grupo (solo admins)
 ┣⊱ ${prefix}kick -> Elimina a usuario del grupo (solo admins)
+┣⊱ ${prefix}abrirchat -> Permite escribir todos en el grupo (solo admins)
+┣⊱ ${prefix}cerrarchat -> Permite cerrar el grupo,solo escriben admins (solo admins)
 ┣⊱ ===============================
 ┣⊱ 	*Comandos de Musica*
 ┣⊱ ===============================

@@ -16,8 +16,8 @@ const help = (prefix) => {
 ┣⊱ ${prefix}welcomusic -> Bienvenida para grupos de musica
 ┣⊱ ${prefix}admins -> Enlista de admins del grupo 
 ┣⊱ ${prefix}linkgroup -> link del grupo
-┣⊱ ${prefix}promote -> Promueve a administrador (solo admins)
-┣⊱ ${prefix}demote -> Degarda de admin a user (solo admins)
+┣⊱ ${prefix}promover -> Promueve a administrador (solo admins)
+┣⊱ ${prefix}desmontar -> Degarda de admin a user (solo admins)
 ┣⊱ ${prefix}llamada -> En lista a todos con etiqueta 
 ┣⊱ ${prefix}gb -> Mensaje Global medio de difusion (solo admins)
 ┣⊱ ${prefix}add -> Añade numeros al grupo (solo admins)

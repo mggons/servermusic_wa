@@ -1,0 +1,44 @@
+{
+  "name": "music-wabot",
+  "version": "0.0.2",
+  "description": "No comment",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "termux",
+    "whatsapp",
+    "bot",
+    "whatsapp",
+    "bot"
+  ],
+  "author": "JDMTECH",
+  "license": "ISC",
+  "dependencies": {
+    "@adiwajshing/baileys": "^3.4.1",
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "cfonts": "^2.9.0",
+    "fake-useragent": "^1.0.1",
+    "file-type": "^16.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "moment-timezone": "^0.5.32",
+    "multistream": "^4.0.1",
+    "node-fetch": "^2.6.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mggons/servermusic_wa.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mggons/servermusic_wa/issues"
+  },
+  "homepage": "https://github.com/mggons/servermusic_wa#readme"
+}

@@ -24,8 +24,6 @@ const path = require("path");
 const streamifier = require("streamifier");
 const Axios = require("axios");
 const Crypto = require("crypto");
-let limit = JSON.parse(fs.readFileSync('./src/limit.json'));
-const google = require('google-it');
 //Añadida entrada de OWNER //
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
@@ -187,47 +185,6 @@ async function starts() {
 			let authorname = client.contacts[from] != undefined ? client.contacts[from].vname || client.contacts[from].notify : undefined	
 			if (authorname != undefined) { } else { authorname = groupName }	
 			
-			function addMetadata(packname, author) {	
-				if (!packname) packname = 'WABot'; if (!author) author = 'Bot';	
-				author = author.replace(/[^a-zA-Z0-9]/g, '');	
-				let name = `${author}_${packname}`
-				if (fs.existsSync(`./src/stickers/${name}.exif`)) return `./src/stickers/${name}.exif`
-				const json = {	
-					"sticker-pack-name": packname,
-					"sticker-pack-publisher": author,
-				}
-				const littleEndian = Buffer.from([0x49, 0x49, 0x2A, 0x00, 0x08, 0x00, 0x00, 0x00, 0x01, 0x00, 0x41, 0x57, 0x07, 0x00])	
-				const bytes = [0x00, 0x00, 0x16, 0x00, 0x00, 0x00]	
-
-				let len = JSON.stringify(json).length	
-				let last	
-
-				if (len > 256) {	
-					len = len - 256	
-					bytes.unshift(0x01)	
-				} else {	
-					bytes.unshift(0x00)	
-				}	
-
-				if (len < 16) {	
-					last = len.toString(16)	
-					last = "0" + len	
-				} else {	
-					last = len.toString(16)	
-				}	
-
-				const buf2 = Buffer.from(last, "hex")	
-				const buf3 = Buffer.from(bytes)	
-				const buf4 = Buffer.from(JSON.stringify(json))	
-
-				const buffer = Buffer.concat([littleEndian, buf2, buf3, buf4])	
-
-				fs.writeFile(`./src/stickers/${name}.exif`, buffer, (err) => {	
-					return `./src/stickers/${name}.exif`	
-				})	
-
-
-			}
 			
 			switch(command) {
 				
@@ -236,20 +193,20 @@ async function starts() {
 					client.sendMessage(from, help(prefix), text)
 					break
 										
-        case 'info':
-               client.sendMessage(from, {displayname: "JDMTECH", vcard: vcard}, MessageType.contact, { quoted: mek})
-               client.sendMessage(from, '_*Este es mi propietario. No olvides cualquier inquietud con el admin ...*_',MessageType.text, { quoted: mek} )
-					     tod = await getBuffer(`https://i.ibb.co/Vm5FHxc/IMG-20210312-WA1759.jpg`)
- 					     client.sendMessage(from, tod, image, { quoted: mek, caption: '_*Tomate tu tiempo y donanos a nuestro paypal, te lo agradeceremos con gusto ->  https://www.paypal.me/malagons !!*_'})
-        			break
+        			case 'info':
+               				client.sendMessage(from, {displayname: "JDMTECH", vcard: vcard}, MessageType.contact, { quoted: mek})
+               				client.sendMessage(from, '_*Este es mi propietario. No olvides cualquier inquietud con el admin ...*_',MessageType.text, { quoted: mek} )
+					tod = await getBuffer(`https://i.ibb.co/Vm5FHxc/IMG-20210312-WA1759.jpg`)
+ 					client.sendMessage(from, tod, image, { quoted: mek, caption: '_*Tomate tu tiempo y donanos a nuestro paypal, te lo agradeceremos con gusto ->  https://www.paypal.me/malagons !!*_'})
+        				break
 					
 				case 'ping':
-             const timestamp = speed();
-             const latensi = speed() - timestamp
-             client.updatePresence(from, Presence.composing) 
-					   uptime = process.uptime()
-             client.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Segundos_*\nDispositivo: *Windows Server 2019*\nRAM: *12GB*\nRed: *LAN-1GB*\nStatus: *Online*\nTipo de BOT: *Termux Emulator*\n\n*El bot esta activo desde*\n*${kyun(uptime)}*`, text, { quoted: mek})
-           break
+             				const timestamp = speed();
+             				const latensi = speed() - timestamp
+             				client.updatePresence(from, Presence.composing) 
+					uptime = process.uptime()
+             				client.sendMessage(from, `Speed: *${latensi.toFixed(4)} _Segundos_*\nDispositivo: *Windows Server 2019*\nRAM: *12GB*\nRed: *LAN-1GB*\nStatus: *Online*\nTipo de BOT: *Termux Emulator*\n\n*El bot esta activo desde*\n*${kyun(uptime)}*`, text, { quoted: mek})
+           				break
 
 				case 'setprefix':
 					if (args.length < 1) return
@@ -293,7 +250,7 @@ async function starts() {
 					buffer = await getBuffer(anu.result.link)
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.result.title}.mp3`, quoted: mek})
 					break
-			case 'mp4': //Añadido by JDMTECH 
+				case 'mp4': //Añadido by JDMTECH 
 					if (args.length < 1) return reply('Y el url de youtube?')
 					anu = await fetchJson(`https://api.zeks.xyz/api/ytmp4?url=${args[0]}&apikey=apivinz`, {method: 'get'})
 					thumbnail = await getBuffer(anu.result.thumbnail)
@@ -303,7 +260,7 @@ async function starts() {
  					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek, caption: 'Listo para disfrutar :)'})
 					break
 	
-			case 'ytbuscar': //Añadido by JDMTECH 
+				case 'ytbuscar': //Añadido by JDMTECH 
 					if (args.length < 1) return reply('¿Qué estás buscando?')
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.zeks.xyz/api/yts?q=${body.slice(5)}&apikey=apivinz`, {method: 'get'})
@@ -317,7 +274,7 @@ async function starts() {
 					reply(teks.trim())
 					break
           
-			case 'llamada':
+				case 'llamada':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -330,7 +287,7 @@ async function starts() {
 					mentions(teks, members_id, true)
 					break
           
-			case 'gb': //mensaje global, solo permitido a los administradores  //Añadido by JDMTECH 
+				case 'gb': //mensaje global, solo permitido a los administradores  //Añadido by JDMTECH 
 					if (!isOwner) return reply('¿Quién es usted?')
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
@@ -348,7 +305,8 @@ async function starts() {
 						reply('*Transmisión Completada*')
 					}
 					break
-     case 'promover':
+					
+     				case 'promover':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -366,7 +324,7 @@ async function starts() {
 						client.groupMakeAdmin(from, mentioned)
 					}
 					break
-			case 'desmontar':
+				case 'desmontar':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -384,7 +342,7 @@ async function starts() {
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
-			case 'add':
+				case 'add':
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -399,7 +357,7 @@ async function starts() {
 					}
 					break
           
-			case 'kick':
+				case 'kick':
 					 if (!isGroup) return reply(mess.only.group)
 					 if (!isGroupAdmins) return reply(mess.only.admin)
 					 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -429,24 +387,24 @@ async function starts() {
 					mentions(teks, groupAdmins, true)
 					break
 					
-     case 'linkgrupo': //link de el grupo 
-           if (!isGroup) return reply(mess.only.group)
-           if (!isGroupAdmins) return reply(mess.only.admin)
-           if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-           linkgc = await client.groupInviteCode(from)
-           reply('https://chat.whatsapp.com/'+linkgc)
-           break
+     				case 'linkgrupo': //link de el grupo 
+           				if (!isGroup) return reply(mess.only.group)
+          				if (!isGroupAdmins) return reply(mess.only.admin)
+           				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
+           				linkgc = await client.groupInviteCode(from)
+           				reply('https://chat.whatsapp.com/'+linkgc)
+           				break
 					
-     case 'leave':
-           if (!isGroup) return reply(mess.only.group)
-           if (isGroupAdmins || isOwner) {
-           client.groupLeave(from)
-           } else {
-           reply(mess.only.admin)
-           }
-           break
+     				case 'leave':
+           				if (!isGroup) return reply(mess.only.group)
+           				if (isGroupAdmins || isOwner) {
+           				client.groupLeave(from)
+           				} else {
+           				reply(mess.only.admin)
+           				}
+           				break
           
-			case 'welcomusic': //Añadido by JDMTECH para grupo de musicas 
+				case 'welcomusic': //Añadido by JDMTECH para grupo de musicas 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -462,7 +420,7 @@ async function starts() {
 					} else {
 						reply('1 para activar, 0 para desactivar')
 					}
-          break	
+          				break	
 				
 			case 'cerrarchat': //Añadido by JDMTECH
 					client.updatePresence(from, Presence.composing) 
@@ -478,7 +436,7 @@ async function starts() {
 					reply(close)
 					break
           
-     case 'abrirchat': //Añadido by JDMTECH
+     				case 'abrirchat': //Añadido by JDMTECH
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)

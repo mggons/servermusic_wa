@@ -30,6 +30,7 @@
     "moment-timezone": "^0.5.32",
     "multistream": "^4.0.1",
     "node-fetch": "^2.6.1",
+    "spinnies": "^0.5.1",
     "request": "^2.81.0"
   },
   "devDependencies": {},

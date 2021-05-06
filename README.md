@@ -1,5 +1,5 @@
 <p align="center">
-<a href="#"><img title="MUSIC LOGO" src="https://www.pngegg.com/es/png-dbucr"></a>
+<a href="#"><img title="MUSIC LOGO" src="https://pimpamphone.files.wordpress.com/2016/01/google-play-music-logo.jpg" width="128" height="128"></a>
 </p>
 
 <p align="center">

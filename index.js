@@ -17,10 +17,8 @@ const ffmpeg = require('fluent-ffmpeg')
 const wmusica = JSON.parse(fs.readFileSync('./src/wmusica.json')) //añadida entrada para grupo de musica
 const result = JSON.parse(fs.readFileSync('./src/result.json'))
 const setting = JSON.parse(fs.readFileSync('./src/settings.json'))
-const imageminWebp = require("imagemin-webp");
 const { tmpdir } = require("os");
 const path = require("path");
-const streamifier = require("streamifier");
 const Axios = require("axios");
 const Crypto = require("crypto");
 //Añadida entrada de OWNER //

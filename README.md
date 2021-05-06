@@ -1,5 +1,5 @@
 <p align="center">
-<p2>Este es un Bot diseñado para la descarga de musica y Videos a travez de YouTube<p2>
+##Este es un Bot diseñado para la descarga de musica y Videos a travez de YouTube
 
 Version 0.1
 

@@ -4,7 +4,7 @@ Utilidades para un servidor de música de WhatsApp usando comandos predeterminad
 Version 0.1
 
 ## Features 
-|Activo|          Grupo y Administradores          |
+|Activo|       Grupo y Administradores          |
 |:-:|:-----------------------------------------:|
 |✅| info -> Admin creador                               |
 |✅| setprefix -> Cambia el codigo inicial del grupo     |
@@ -19,12 +19,12 @@ Version 0.1
 |✅| kick -> Elimina a usuario del grupo (solo admins)   |
 |✅| abrirchat -> Permite escribir todos en el grupo (solo admins)  |
 |✅| cerrarchat -> Permite cerrar el grupo,solo escriben admins (solo admins)  |
-|=========================================================|
-|          Comandos de Musica y Videos a Descargar        |
-|=========================================================|
+
+|Activo|    Comandos de Musica y Videos a Descargar      |
+
 |✅| ytbuscar -> Busca en youtube                        |
 |✅| mp3 -> Sacar pista de audio de Youtube              |
 |✅| mp4 -> Sacar video de Youtube                       |
-|=========================================================|
+
 
 Proximamente mas Comandos

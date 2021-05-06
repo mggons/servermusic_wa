@@ -4,13 +4,13 @@ Utilidades para un servidor de música de WhatsApp usando comandos predeterminad
 Version 0.1
 
 ## Features 
-|========================================================|\n
-|                  Grupo y Administradores               |\n
-|========================================================|\n
-|✅| info -> Admin creador                               |\n
-|✅| setprefix -> Cambia el codigo inicial del grupo     |\n
-|✅| welcomusic -> Bienvenida para grupos de musica      |  (0 deshabilitado, 1 habilitado)\n
-|✅| admins -> En lista de admins del grupo              |\n
+|:------------------------------------------------------:|
+|                  Grupo y Administradores               |
+|:------------------------------------------------------:|
+|✅| info -> Admin creador                               |
+|✅| setprefix -> Cambia el codigo inicial del grupo     |
+|✅| welcomusic -> Bienvenida para grupos de musica      |  (0 deshabilitado, 1 habilitado)
+|✅| admins -> En lista de admins del grupo              |
 |✅| linkgrupo -> link del grupo                         |
 |✅| promover -> Promueve a administrador (solo admins)  |
 |✅| desmontar -> Degarda de admin a user (solo admins)  |

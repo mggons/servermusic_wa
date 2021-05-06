@@ -3,7 +3,18 @@ Este es un Bot diseñado para la descarga de musica y Videos a travez de YouTube
 
 Version 0.1
 
-## Clone this project
+## Clone this project```bash
+> git clone https://github.com/mggons/servermusic_wa
+```
+
+## Install the dependencies:
+Before running the below command, make sure you're in the project directory that
+you've just cloned!!
+
+```bash
+> cd termux-wabot
+> bash install.sh
+```
 
 
 ## Features 

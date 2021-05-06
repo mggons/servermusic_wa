@@ -1,5 +1,5 @@
 <p align="center">
-<a href="#"><img title="MUSIC LOGO" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fes%2Fsearch%2Fmusic%2Blogo&psig=AOvVaw1bcmpePGHyGxbaFgE2Ez-L&ust=1620399309724000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiumfyntfACFQAAAAAdAAAAABAI"></a>
+<a href="#"><img title="MUSIC LOGO" src="https://image.shutterstock.com/image-vector/vector-logo-music-600w-397126390.jpg"></a>
 </p>
 
 <p align="center">

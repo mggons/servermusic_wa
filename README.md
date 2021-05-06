@@ -21,7 +21,7 @@ Version 0.1
 |✅| cerrarchat -> Permite cerrar el grupo,solo escriben admins (solo admins)  |
 
 |Activo|    Comandos de Musica y Videos a Descargar      |
-
+|:-:|:-----------------------------------------:|
 |✅| ytbuscar -> Busca en youtube                        |
 |✅| mp3 -> Sacar pista de audio de Youtube              |
 |✅| mp4 -> Sacar video de Youtube                       |

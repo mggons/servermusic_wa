@@ -1,5 +1,5 @@
 <p align="center">
-<a href="#"><img title="MUSIC LOGO" src="https://pimpamphone.files.wordpress.com/2016/01/google-play-music-logo.jpg" width="128" height="128"></a>
+<a href="#"><img title="MUSIC LOGO" src="https://img.utdstc.com/icon/9f1/c7b/9f1c7ba989ad4a11039b0a5a82bc4a8db39dda35d2c8fe26a46d1a0d277df877:200" width="128" height="128"></a>
 </p>
 
 <p align="center">

@@ -419,7 +419,7 @@ async function starts() {
 					}
           				break	
 				
-			case 'cerrarchat': //Añadido by JDMTECH
+				case 'cerrarchat': //Añadido by JDMTECH
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)

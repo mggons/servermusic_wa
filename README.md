@@ -4,7 +4,7 @@ Utilidades para un servidor de música de WhatsApp usando comandos predeterminad
 Version 0.1
 
 ## Features 
-|:-:|          Grupo y Administradores          |
+|Activo|          Grupo y Administradores          |
 |:-:|:-----------------------------------------:|
 |✅| info -> Admin creador                               |
 |✅| setprefix -> Cambia el codigo inicial del grupo     |

@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-Este es un Bot diseñado para la descarga de musica y Videos a travez de YouTube
+Este es un Bot diseñado para la descarga de Musica y Videos a travez de YouTube 
 <p align="center">
 Version 0.1
 

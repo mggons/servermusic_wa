@@ -1,4 +1,5 @@
-<P1>Este es un Bot diseñado para la descarga de musica y Videos a travez de YouTube<p1>
+<p align="center">
+<p2>Este es un Bot diseñado para la descarga de musica y Videos a travez de YouTube<p2>
 
 Version 0.1
 

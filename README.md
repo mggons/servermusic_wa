@@ -10,8 +10,8 @@ Version 0.1
 ```
 
 ## Instala las dependencias:
-Before running the below command, make sure you're in the project directory that
-you've just cloned!!
+Antes de ejecutar el siguiente comando, asegúrese de estar en el directorio del proyecto que
+acabas de clonar !!
 
 ```bash
 > cd termux-wabot

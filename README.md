@@ -1,7 +1,9 @@
-# servermusic_wa
-Utilidades para un servidor de música de WhatsApp usando comandos predeterminados.
+<P1>Este es un Bot diseñado para la descarga de musica y Videos a travez de YouTube<p1>
 
 Version 0.1
+
+
+
 
 ## Features 
 |Activo|       Grupo y Administradores          |

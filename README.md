@@ -4,7 +4,6 @@ Utilidades para un servidor de música de WhatsApp usando comandos predeterminad
 Version 0.1
 
 ## Features 
-|:-:|:-----------------------------------------:|
 |:-:|          Grupo y Administradores          |
 |:-:|:-----------------------------------------:|
 |✅| info -> Admin creador                               |

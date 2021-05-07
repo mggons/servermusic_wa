@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-Este es un Bot diseñado para la descarga de Musica y Videos a travez de YouTube usando Whatsapp
+Este es un Bot esta diseñado para la descarga de Musica y Videos a travez de YouTube usando Whatsapp
 <p align="center">
 Version 0.1
 

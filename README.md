@@ -10,7 +10,7 @@ Version 0.1
 ## Clona el Proyecto
 
 ```bash
-> git clone https://github.com/mggons/bot_1.1
+> git clone https://github.com/mggons/servermusic_wa
 ```
 
 ## Instala las dependencias:

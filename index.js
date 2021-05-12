@@ -210,10 +210,10 @@ async function starts() {
 					reply(`El prefijo se ha cambiado correctamente a : ${prefix}`)
 					break
 					
-				 /*case 'mp3':  //modificaciones de JDMTECH
+				 case 'ytmp3':  //modificaciones de JDMTECH
                     			if (args.length < 1) return reply('Y el url de youtube?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(ind.wrogf())
-					anu = await fetchJson(`https://videfikri.com/api/ytmp3/?url=${args[0]}`, {method: 'get'})  //modificaciones de JDMTECH
+					anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/ytmp3?url=${args[0]}`, {method: 'get'})  //modificaciones de JDMTECH
 					if (anu.error) return reply(anu.error)
 					teks = `*Titulo* : ${anu.title}\n*Peso* : ${anu.size}\n*formato* : ${anu.format}\n*Descarga* : ${anu.url_audio}\n*result* : ${anu.result}`
 					thumb = await getBuffer(anu.thumbnail)
@@ -222,17 +222,17 @@ async function starts() {
 					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
 					break
 					
-				  case 'mp4':  //modificaciones de JDMTECH
+				  case 'ytmp4':  //modificaciones de JDMTECH
 					if (args.length < 1) return reply('Y el url de youtube?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(ind.stikga())
-					anu = await fetchJson(`https://videfikri.com/api/ytmp4/?url=${args[0]}`, {method: 'get'}) //modificaciones de JDMTECH
+					anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/ytmp4?url=${args[0]}`, {method: 'get'}) //modificaciones de JDMTECH
 					if (anu.error) return reply(anu.error)
 					teks = `*Title* : ${anu.title}\n*Size* : ${anu.filesize}\n*result* : ${anu.url_video}\n** : ${anu.thumbnail}`
 					thumb = await getBuffer(anu.thumbnail)
 					client.sendMessage(from, thumbnail, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.url_video)
 					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
-					break*/ 
+					break 
 					
 				case 'mp3': //Añadido by JDMTECH
 					if (args.length < 1) return reply('Y el url de youtube?')

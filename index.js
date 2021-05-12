@@ -115,8 +115,6 @@ async function starts() {
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
 			const apiKey = setting.apiKey
-			const apiKey2 = setting.apiKey2 // contact me on whatsapp wa.me/6285892766102
-			const apiKey3 = setting.apiKey3 // para solicitar una key debes ir a la pagina https://zeks.xyz y registrarse
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
 			const time = moment.tz('America/Bogota').format('DD/MM HH:mm:ss') //cambio de Zona horaria
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
@@ -241,7 +239,7 @@ async function starts() {
 					
 				case 'mp3': //Añadido by JDMTECH
 					if (args.length < 1) return reply('Y el url de youtube?')
-					anu = await fetchJson(`https://api.zeks.xyz/api/ytmp3/2?url=${args[0]}&apiKey=${apiKey3}`, {method: 'get'})
+					anu = await fetchJson(`https://api.zeks.xyz/api/ytmp3/2?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
 					thumbnail = await getBuffer(anu.result.thumb)
 					teks = `*Titulo* : ${anu.result.title}\n*Tamaño* : ${anu.result.size}\n*Calidad* : ${anu.result.quality}\n*Espere un momento para ser enviado*\n*el enlace de audio a través del*\n*enlace de descarga*: ${anu.result.link}`
 					client.sendMessage(from, thumbnail, image, {quoted: mek, caption: teks})
@@ -250,7 +248,7 @@ async function starts() {
 					break
 				case 'mp4': //Añadido by JDMTECH 
 					if (args.length < 1) return reply('Y el url de youtube?')
-					anu = await fetchJson(`https://api.zeks.xyz/api/ytmp4?url=${args[0]}&apiKey=${apiKey3}`, {method: 'get'})
+					anu = await fetchJson(`https://api.zeks.xyz/api/ytmp4?url=${args[0]}&apiKey=${apiKey}`, {method: 'get'})
 					thumbnail = await getBuffer(anu.result.thumbnail)
 					teks = `*Titulo* : ${anu.result.title}\n*Tamaño* : ${anu.result.size}\n*Calidad* : ${anu.result.quality}\n*Espere un momento para ser enviado*\n*el enlace de audio a través del*\n*enlace de descarga*: ${anu.result.url_video}`
 					client.sendMessage(from, thumbnail, image, {quoted: mek, caption: teks})
@@ -261,7 +259,7 @@ async function starts() {
 				case 'ytbuscar': //Añadido by JDMTECH 
 					if (args.length < 1) return reply('¿Qué estás buscando?')
 					reply(mess.wait)
-					anu = await fetchJson(`https://api.zeks.xyz/api/yts?q=${body.slice(5)}&apiKey=${apiKey3}`, {method: 'get'})
+					anu = await fetchJson(`https://api.zeks.xyz/api/yts?q=${body.slice(5)}&apiKey=${apiKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					teks = '=================\n'
 					for (let i of anu.result){

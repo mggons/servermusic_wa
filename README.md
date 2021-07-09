@@ -32,7 +32,7 @@ acabas de clonar !!
 {
 	"prefix": ".",
 	"ownerNumber": "62858xxxxx",
-	"apiKey": "Your ApiKey here"
+	"apiKey": "Your ApiKey here" -> Si necesitan el codigo de la API escribeme al https://wa.link/f2i4f6
 }
 ```
 

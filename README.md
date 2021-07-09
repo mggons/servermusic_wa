@@ -67,8 +67,10 @@ Proximamente mas Comandos
 ## Error de Bailkeys
 
 Si se presenta este error deben corregirlo meniante este codigo 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/F5kJPMr/error-bailkeys-whatsapp-bot.jpg" alt="error-bailkeys-whatsapp-bot" border="0" /></a>
 
+<p align="center">
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/F5kJPMr/error-bailkeys-whatsapp-bot.jpg" alt="error-bailkeys-whatsapp-bot" border="0" /></a>
+<p>
 > cd node_modules
 > cd @adiwajshing
 > cd bailkeys

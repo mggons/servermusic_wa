@@ -521,7 +521,7 @@ async function starts() {
  					client.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${soundc.result.title}.mp3`, quoted: mek, caption: 'Disfruta :)'})
 					break
 
-				case 'joox':
+				case 'jxbuscar':
 					if (args.length < 1) return reply('¿Qué estás buscando?')
 					reply(mess.wait)
 					x = await fetchJson(`https://api.zeks.xyz/api/joox?apikey=${apikey}&q=${body.slice(5)}`, { method: 'get' })
@@ -532,7 +532,7 @@ async function starts() {
 					reply(teks.trim())
 					break
 
-				case 'descarga':
+				case 'dlaudio':
 					if (args.length < 1) return reply('¿link de descarga joox?')
 					reply(mess.wait)
 					jox = await getBuffer(`${args[0]}`)

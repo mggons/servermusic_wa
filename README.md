@@ -77,6 +77,7 @@ acabas de clonar !!
 |✅| bkmp3 -> Sacar audio de Youtube Servidor backup     |
 |✅| bkmp4 -> Sacar video de Youtube Servidor backup     |
 |✅| soundcloud -> Sacar audio de Youtube Servidor 1     |
+|✅| dlaudio -> Sacar audio de joox u otra fuente        |
 
 
 

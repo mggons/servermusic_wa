@@ -18,7 +18,7 @@ Antes de ejecutar el siguiente comando, asegúrese de estar en el directorio del
 acabas de clonar !!
 
 ```bash
-> cd termux-wabot
+> cd servermusic_wa
 > bash install.sh
 ```
 
@@ -68,15 +68,17 @@ Proximamente mas Comandos
 
 Si se presenta este error deben corregirlo meniante este codigo 
 
-<p align="center">
+<p align="left">
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/F5kJPMr/error-bailkeys-whatsapp-bot.jpg" alt="error-bailkeys-whatsapp-bot" border="0" /></a>
 <p>
+```bash
 > cd node_modules
 > cd @adiwajshing
 > cd bailkeys
 > cd lib	
 > cd WAConnection
 - nano 0.Base.js
+```
 	Se cambia la linea que dice: .
 	/** The version of WhatsApp Web we're telling the servers we are */
         this.version = [2, 2119, 9]; //Debe cambiar esto cuando no se ejecute el bot a 2, 2119, 6

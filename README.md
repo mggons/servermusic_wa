@@ -28,11 +28,12 @@ acabas de clonar !!
 ```
 
 ### Debes Configurar
+-> Si necesitan el codigo de la API escribeme al https://wa.link/f2i4f6
 ```json
 {
 	"prefix": ".",
 	"ownerNumber": "62858xxxxx",
-	"apiKey": "Your ApiKey here" -> Si necesitan el codigo de la API escribeme al https://wa.link/f2i4f6
+	"apiKey": "Your ApiKey here" 
 }
 ```
 

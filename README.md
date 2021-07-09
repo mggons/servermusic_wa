@@ -66,4 +66,8 @@ Proximamente mas Comandos
 	
 ## Error de Bailkeys
 
-Si se presenta este error deben corregirlo
+Si se presenta este error deben corregirlo meniante este codigo 
+
+```bash
+> 
+```

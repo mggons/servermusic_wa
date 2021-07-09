@@ -31,7 +31,7 @@ acabas de clonar !!
 -> Si necesitan el codigo de la API escribeme al https://wa.link/f2i4f6
 ```json
 {
-	"prefix": ".",
+	"prefix": "#",
 	"ownerNumber": "62858xxxxx",
 	"apiKey": "Your ApiKey here" 
 }
@@ -54,12 +54,30 @@ acabas de clonar !!
 |✅| kick -> Elimina a usuario del grupo (solo admins)   |
 |✅| abrirchat -> Permite escribir todos en el grupo (solo admins)  |
 |✅| cerrarchat -> Permite cerrar el grupo,solo escriben admins (solo admins)  |
-
+|✅| Stiker/Sticker -> Permite crear stickers  |
+|✅| cambios -> Permite ver los cambios del BOT  |
+|✅| cambionm -> Cambia el nombre del grupo (solo admins) |
+|✅| cambiodc -> Cambia descripcion del grupo (solo admins) | 
+|✅| fotogrupo -> Cambia foto del grupo (solo admins) | 
+	
+|Activo|    Comandos de Grupo Usuarios
+|:-:|:----------------------------------------:|
+|✅| menumusica -> Menu del grupo de musica    |
+|✅| musireglas -> Reglas del grupo fulltono   |
+	
+	
 |Activo|    Comandos de Musica y Videos a Descargar      |
 |:-:|:-----------------------------------------:|
+|✅| jxbuscar -> Buscar audio en joox	  		|
 |✅| ytbuscar -> Busca en youtube                        |
-|✅| mp3 -> Sacar pista de audio de Youtube              |
-|✅| mp4 -> Sacar video de Youtube                       |
+|✅| mp3 -> Sacar audio de Youtube Servidor 1   		|
+|✅| mp4 -> Sacar video de Youtube Servidor 1            |
+|✅| dlmp3 -> Sacar audio de Youtube Servidor 2          |
+|✅| dlmp4 -> Sacar video de Youtube  Servidor 2         |
+|✅| bkmp3 -> Sacar audio de Youtube Servidor backup     |
+|✅| bkmp4 -> Sacar video de Youtube Servidor backup     |
+|✅| soundcloud -> Sacar audio de Youtube Servidor 1     |
+
 
 
 Proximamente mas Comandos

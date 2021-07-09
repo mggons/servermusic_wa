@@ -67,8 +67,8 @@ Proximamente mas Comandos
 ## Error de Bailkeys
 
 Si se presenta este error deben corregirlo meniante este codigo 
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/F5kJPMr/error-bailkeys-whatsapp-bot.jpg" alt="error-bailkeys-whatsapp-bot" border="0" /></a>
 
-```bash
 > cd node_modules
 > cd @adiwajshing
 > cd bailkeys
@@ -79,4 +79,3 @@ Si se presenta este error deben corregirlo meniante este codigo
 	/** The version of WhatsApp Web we're telling the servers we are */
         this.version = [2, 2119, 9]; //Debe cambiar esto cuando no se ejecute el bot a 2, 2119, 6
 	
-```

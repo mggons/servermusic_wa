@@ -81,7 +81,7 @@ Si se presenta este error deben corregirlo meniante este codigo
 - nano 0.Base.js
 ```
 Se cambia la linea que dice:
-
+```bash
 /** The version of WhatsApp Web we're telling the servers we are */
 this.version = [2, 2119, 9]; //Debe cambiar esto cuando no se ejecute el bot a 2, 2119, 6
-	
+```	

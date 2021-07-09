@@ -1,5 +1,6 @@
 <p align="center">
 <a href="#"><img title="MUSIC LOGO" src="https://img.utdstc.com/icon/9f1/c7b/9f1c7ba989ad4a11039b0a5a82bc4a8db39dda35d2c8fe26a46d1a0d277df877:200" width="128" height="128"></a>
+<a href="#"><img title="whatsapp LOGO" src="https://w7.pngwing.com/pngs/621/612/png-transparent-smartphone-application-icon-logo-business-watsapp-grass-desktop-wallpaper-%D0%B1%D0%B0%D1%80%D0%B0%D1%85%D0%BE%D0%BB%D0%BA%D0%B0.png" width="128" height="128"></a>	
 </p>
 
 <p align="center">

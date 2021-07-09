@@ -80,8 +80,8 @@ Si se presenta este error deben corregirlo meniante este codigo
 > cd WAConnection
 - nano 0.Base.js
 ```
-Se cambia la linea que dice: .
-/** The version of WhatsApp Web we're telling the servers we are */
+Se cambia la linea que dice:
 
+/** The version of WhatsApp Web we're telling the servers we are */
 this.version = [2, 2119, 9]; //Debe cambiar esto cuando no se ejecute el bot a 2, 2119, 6
 	

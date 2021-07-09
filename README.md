@@ -62,3 +62,8 @@ acabas de clonar !!
 
 
 Proximamente mas Comandos
+
+	
+## Error de Bailkeys
+
+Si se presenta este error deben corregirlo

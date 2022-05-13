@@ -1,0 +1,14 @@
+{
+  "name": "Bot-Musical-SyA",
+  "description": "WhatsApp Bot en la nube",
+  "repository": "https://github.com/mggons/servermusic_wa",
+  "logo": "https://img.utdstc.com/icon/9f1/c7b/9f1c7ba989ad4a11039b0a5a82bc4a8db39dda35d2c8fe26a46d1a0d277df877:200",
+  "keywords": [
+     "wabot",
+     "baileys",
+     "botwa",
+     "bot", 
+     "whatsapp", 
+     "whatsapp-bot"
+   ]
+}

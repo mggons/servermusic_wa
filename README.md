@@ -1,107 +1,123 @@
-<p align="center">
-<a href="#"><img title="MUSIC LOGO" src="https://img.utdstc.com/icon/9f1/c7b/9f1c7ba989ad4a11039b0a5a82bc4a8db39dda35d2c8fe26a46d1a0d277df877:200" width="128" height="128"></a>
-</p>
+<a href="https://github.com/Fariiid-M/"><img src="https://cardivo.vercel.app/api?name=SELF BOT WHATSAPP&description=Whatsapp bot using baileys recode from wabot-aq&image=https://telegra.ph/file/55e631dbf7a5891e09606.jpg&usqp=CAU&backgroundColor=%23ecf0f1&github=Fariiid-M&pattern=leaf&colorPattern=%23eaeaea" /></a>
 
-<p align="center">
-Este es un Bot esta diseñado para la descarga de Musica y Videos a travez de YouTube usando Whatsapp
-<p align="center">
-Version 2.5
+Simple WhatsApp Bot
 
-## Clona el Proyecto
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mggons/test)
+
+[![Grup WhatsApp](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/BzDqJgRFzEECe2IbE4WtOf)
+
+
+# Info :
+* Edit nomer owner [`di sini`](https://github.com/Fariiid-M/SelfBot-whatsapp/blob/main/config.js#L5)
+* Auto public? ubah [`di sini`](https://github.com/Fariiid-M/SelfBot-whatsapp/blob/main/handler.js#L59) dan [`di sini`](https://github.com/Fariiid-M/SelfBot-whatsapp/blob/main/handler.js#L63) menjadi false
+* Edit teks rejected [`di sini`](https://github.com/Fariiid-M/SelfBot-whatsapp/blob/main/handler.js#L347)
+* Edit watermark sticker [`di sini (packname)`](https://github.com/Fariiid-M/SelfBot-whatsapp/blob/main/config.js#L33) dan [`di sini (author)`](https://github.com/Fariiid-M/SelfBot-whatsapp/blob/main/config.js#L38)
+----
+
+# Cara Penginstalan :
+
+
+## UNTUK PENGGUNA WINDOWS/VPS/RDP :
+
+* Unduh & Instal Git [`Klik Disini`](https://git-scm.com/downloads)
+* Unduh & Instal NodeJS [`Klik Disini`](https://nodejs.org/en/download)
+* Unduh & Instal FFmpeg [`Klik Disini`](https://ffmpeg.org/download.html) (**Jangan Lupa Tambahkan FFmpeg ke variabel lingkungan PATH**)
+* Unduh & Instal ImageMagick [`Klik Disini`](https://imagemagick.org/script/download.php)
 
 ```bash
-> git clone https://github.com/mggons/servermusic_wa
+git clone https://github.com/Fariiid-M/SelfBot-whatsapp
+cd SelfBot-whatsapp
+npm i
+npm update 
+node .
 ```
 
-## Instala las dependencias:
-Antes de ejecutar el siguiente comando, asegúrese de estar en el directorio del proyecto que
-acabas de clonar !!
+  #### Menginstall FFmpeg Di Windows/RDP :
+* Unduh salah satu versi FFMMPEG [`Di Sini`](https://ffmpeg.org/download.html).
+* Ekstrak file ke `C:\` path.
+* Ubah nama folder menjadi `ffmpeg`.
+* Jalankan Command Prompt sebagai Administrator.
+* Jalankan perintah berikut:
+```cmd
+> setx /m PATH "C:\ffmpeg\bin;%PATH%"
+```
+Jika berhasil, maka akan muncul pesan seperti: 
+`SUCCESS: specified value was saved`.
 
-```bash
-> cd servermusic_wa
-> bash install.sh
+* Sekarang setelah Anda menginstal FFmpeg, verifikasi bahwa itu berfungsi dengan menjalankan perintah ini untuk melihat versinya:
+```cmd
+> ffmpeg -version
+```
+---------
+
+## UNTUK PENGGUNA HEROKU :
+
+### Add Buildpack
+```
+- heroku/nodejs
+- https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+- https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git
+```
+* Klik deploy to heroku di atas
+* pergi ke settings lalu pilih `Add Buildpack`.
+* isi dengan buildpack yang atas
+* Pergi ke deploy lalu deploy branch
+
+---------
+
+## Arguments `node . [--options] [<session name>]`
+
+### `--prefix <prefixes>`
+
+* `prefixes` dipisahkan oleh masing-masing karakter
+Setel awalan
+
+### `--server`
+
+Digunakan untuk [heroku](https://heroku.com/) atau pindai melalui situs web
+
+### `--db <json-server-url>`
+
+Gunakan db eksternal alih-alih db lokal, 
+* Contoh Server `https://json-server.nurutomo.repl.co/`
+* Code: `https://repl.it/@Nurutomo/json-server`
+* `node . --db 'https://json-server.nurutomo.repl.co/'`
+* Server harus memiliki spesifikasi seperti ini
+
+### `--big-qr`
+
+Jika qr unicode kecil tidak mendukung
+
+### `--img`
+
+Aktifkan pemeriksa gambar melalui terminal
+
+### `--autoread`
+
+Jika diaktifkan, semua pesan masuk akan ditandai sebagai telah dibaca
+
+### `--test`
+
+**Development** Testing Mode
+
+### `--trace`
+
+```js
+conn.logger.level = 'trace'
 ```
 
-### Para Usar 
-```bash
-> npm start
+### `--debug`
+
+```js
+conn.logger.level = 'debug'
 ```
 
-### Debes Configurar
--> Si necesitan el codigo de la API escribeme al https://wa.link/f2i4f6
-```json
-{
-	"prefix": "#",
-	"ownerNumber": "62858xxxxx",
-	"apiKey": "Your ApiKey here" 
-}
-```
+---------
 
+### Thanks :
 
-## Features 
-|Activo|       Grupo y Administradores          |
-|:-:|:-----------------------------------------:|
-|✅| info -> Admin creador                               |
-|✅| setprefix -> Cambia el codigo inicial del grupo     |
-|✅| welcomusic -> Bienvenida para grupos de musica      |  (0 deshabilitado, 1 habilitado)
-|✅| admins -> En lista de admins del grupo              |
-|✅| linkgrupo -> link del grupo                         |
-|✅| promover -> Promueve a administrador (solo admins)  |
-|✅| desmontar -> Degarda de admin a user (solo admins)  |
-|✅| llamada -> En lista a todos con etiqueta            |
-|✅| gb -> Mensaje Global medio de difusion (solo admins)|
-|✅| add -> Añade numeros al grupo (solo admins)         |
-|✅| kick -> Elimina a usuario del grupo (solo admins)   |
-|✅| abrirchat -> Permite escribir todos en el grupo (solo admins)  |
-|✅| cerrarchat -> Permite cerrar el grupo,solo escriben admins (solo admins)  |
-|✅| Stiker/Sticker -> Permite crear stickers  |
-|✅| cambios -> Permite ver los cambios del BOT  |
-|✅| cambionm -> Cambia el nombre del grupo (solo admins) |
-|✅| cambiodc -> Cambia descripcion del grupo (solo admins) | 
-|✅| fotogrupo -> Cambia foto del grupo (solo admins) | 
-	
-|Activo|    Comandos de Grupo Usuarios
-|:-:|:----------------------------------------:|
-|✅| menumusica -> Menu del grupo de musica    |
-|✅| musireglas -> Reglas del grupo fulltono   |
-	
-	
-|Activo|    Comandos de Musica y Videos a Descargar      |
-|:-:|:-----------------------------------------:|
-|✅| jxbuscar -> Buscar audio en joox	  		|
-|✅| ytbuscar -> Busca en youtube                        |
-|✅| mp3 -> Sacar audio de Youtube Servidor 1   		|
-|✅| mp4 -> Sacar video de Youtube Servidor 1            |
-|✅| dlmp3 -> Sacar audio de Youtube Servidor 2          |
-|✅| dlmp4 -> Sacar video de Youtube  Servidor 2         |
-|✅| bkmp3 -> Sacar audio de Youtube Servidor backup     |
-|✅| bkmp4 -> Sacar video de Youtube Servidor backup     |
-|✅| soundcloud -> Sacar audio de Youtube Servidor 1     |
-|✅| dlaudio -> Sacar audio de joox u otra fuente        |
+ [![adiwajshing](https://github.com/adiwajshing.png?size=100)](https://github.com/adiwajshing) | [![Nurutomo](https://github.com/Nurutomo.png?size=100)](https://github.com/Nurutomo) | [![Dika Ardnt](https://github.com/DikaArdnt.png?size=100)](https://github.com/DikaArdnt) | [![dngda](https://github.com/dngda.png?size=100)](https://github.com/dngda)
+----|----|----|----
+[Adiwajshing](https://github.com/adiwajshing) | [Nurutomo](https://github.com/Nurutomo) | [DikaArdnt](https://github.com/DikaArdnt) | [DanangDwiyoga](https://github.com/dngda)
 
-
-
-Proximamente mas Comandos
-
-	
-## Error de Bailkeys
-
-Si se presenta este error deben corregirlo meniante este codigo 
-
-<p align="left">
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/F5kJPMr/error-bailkeys-whatsapp-bot.jpg" alt="error-bailkeys-whatsapp-bot" border="0" /></a>
-<p>
-	
-```bash
-> cd node_modules
-> cd @adiwajshing
-> cd bailkeys
-> cd lib	
-> cd WAConnection
-- nano 0.Base.js
-```
-Se cambia la linea que dice:
-```bash
-/** The version of WhatsApp Web we're telling the servers we are */
-this.version = [2, 2110, 9]; //Debe cambiar esto cuando no se ejecute el bot a 2, 2119, 6
-```	
+---------

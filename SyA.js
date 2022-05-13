@@ -477,7 +477,7 @@ function kyun(seconds){
 //============================ A L L  C A S E  M E N U ==============================
 //================================================================================/
 switch (command) {  
-    case 'menu':
+    case 'inicio':
           listMsg = {
           buttonText: 'Sistema Soporte y Aportes Menu\n',
           footerText: `\n${fake}`,

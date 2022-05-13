@@ -478,7 +478,6 @@ function kyun(seconds){
 //================================================================================/
 switch (command) {  
     case 'menu':
-      
           listMsg = {
           buttonText: 'Sistema Soporte y Aportes Menu\n',
           footerText: `\n${fake}`,
@@ -519,7 +518,6 @@ switch (command) {
 //============================== Comandos Basicos ================================/
 //================================================================================/
 case 'bcommands':
-
 listMsg = {
 buttonText: 'Comandos Basicos\n',
 footerText: `\n${fake}`,

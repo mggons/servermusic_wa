@@ -1,3 +1,4 @@
+var port = process.env.PORT || 5000;
 const {
     WAConnection,
     MessageType,

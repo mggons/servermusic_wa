@@ -1,4 +1,3 @@
-var port = process.env.PORT || 3001;
 const {
     WAConnection,
     MessageType,
@@ -211,7 +210,3 @@ function uncache(module = '.') {
 }
 
 starts()
-
-app.listen(3001 || process.env.PORT, '0.0.0.0', () => {
-  console.log("Server is running.");
-});

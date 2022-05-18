@@ -5,9 +5,9 @@ const {
     Mimetype,
     GroupSettingChange
 } = require('@adiwajshing/baileys')
-const port = process.env.PORT || 3000;
-const host = '0.0.0.0'
-.listen(port, host, ()=> connsole.log(`server is running on port ${port}`)
+//const port = process.env.PORT || 3000;
+//const host = '0.0.0.0'
+//.listen(port, host, ()=> connsole.log(`server is running on port ${port}`)
 const fs = require('fs')
 const { color } = require('./lib/color')
 const {_wait, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, success, author, close } = require('./lib/functions');
@@ -213,6 +213,6 @@ function uncache(module = '.') {
 }
 
 starts()
-const port = process.env.PORT || 3000;
-const host = '0.0.0.0'
-.listen(port, host, ()=> connsole.log(`server is running on port ${port}`)
+//const port = process.env.PORT || 3000;
+//const host = '0.0.0.0'
+//.listen(port, host, ()=> connsole.log(`server is running on port ${port}`)
